@@ -1,5 +1,5 @@
 from django.contrib import admin
-from apps.main.models import Index, Steps
+from apps.main.models import Index, Steps, Contact
 from django.utils.html import format_html
 # Register your models here.
 
@@ -14,3 +14,8 @@ class StepsAdmin(admin.ModelAdmin):
     image_tag.short_description = "Фото"
 
     list_display = ('title', 'image_tag',)
+
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description')
