@@ -136,3 +136,29 @@ class TelegramUser(models.Model):
     class Meta:
         verbose_name = "Пользователь телеграм"
         verbose_name_plural = "Пользователи телеграма"
+
+
+class Faq(models.Model):
+    title = models.CharField(
+        max_length=255,
+        verbose_name="Заголовок"
+    )
+    num = models.CharField(
+        max_length=255,
+        verbose_name='Нумерация'
+    )
+    title2 = models.CharField(
+        max_length=255,
+        verbose_name="Заголовок ввиде вопроса"
+    )
+    description = models.CharField(
+        max_length=255,
+        verbose_name="Ответ"
+    )
+
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Часто задаваемый вопрос"
+        verbose_name_plural = "Часто задаваемые вопросы"
