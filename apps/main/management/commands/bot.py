@@ -1,6 +1,5 @@
 from django.core.management.base import BaseCommand
 from apps.main.service import bot
-
 class Command(BaseCommand):
     help = 'Bot'
     

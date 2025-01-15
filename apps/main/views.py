@@ -31,3 +31,4 @@ email: {email}
 def faq(request):
     faq = Faq.objects.all()
     return render(request, 'faq.html', locals())
+
