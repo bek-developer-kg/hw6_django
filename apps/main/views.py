@@ -32,3 +32,5 @@ def faq(request):
     faq = Faq.objects.all()
     return render(request, 'faq.html', locals())
 
+def about_me(request):
+    return render(request, 'about-me.html', locals())

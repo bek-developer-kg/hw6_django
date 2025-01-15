@@ -64,31 +64,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Портфолио</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="portfolio-infinite-list.html">Бесконечный список</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-slider.html">Слайдер</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-column.html">Карточки с колонками/a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-grid.html">Классическая сетка</a>
-                                </li>
-                                <li class="bringer-menu-divider"></li>
-                                <li>
-                                    <a href="portfolio-post01.html">Детали портфеля 01</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-post02.html">Детали портфеля 02</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-post03.html">Детали портфеля 03</a>
-                                </li>
-                            </ul>
+                            <a href="{% url 'about_me' %}">Обо мне</a>
                         </li>
                         <li>
                             <a href="{% url 'contact' %}">Контакты</a>
@@ -104,7 +80,7 @@
         <!-- Mobile Header -->
         <div class="bringer-mobile-header-inner">
             <a href="./" class="bringer-logo">
-                <img src="img/logo.png" alt="bringer." width="88" height="24">
+                <img src="{% static 'img/logo.png' %}" alt="bringer." width="88" height="24">
             </a>
             <a href="#" class="bringer-mobile-menu-toggler">
                 <i class="bringer-menu-toggler-icon">
@@ -132,9 +108,9 @@
                             <!-- Social Proof -->
                             <div class="bringer-hero-social-proof">
                                 <div data-stagger-appear="fade-up" data-stagger-delay="100" data-stagger-unload="fade-up">
-                                    <img src="img/home/social-proof01.jpg" alt="Client 01">
-                                    <img src="img/home/social-proof02.jpg" alt="Client 02">
-                                    <img src="img/home/social-proof03.jpg" alt="Client 03">
+                                    <img src="{% static 'img/home/social-proof01.jpg' %}" alt="Client 01">
+                                    <img src="{% static 'img/home/social-proof02.jpg' %}" alt="Client 02">
+                                    <img src="{% static 'img/home/social-proof03.jpg' %}" alt="Client 03">
                                     <a href="testimonials.html">24K+</a>
                                 </div>
                                 <p data-appear="fade-up" data-unload="fade-up" data-delay="200">Доверяют более 24 тысяч клиентов</p>
@@ -146,7 +122,7 @@
                     <div class="bringer-hero-media-wrap bringer-masked-bottom-right bringer-masked-block stg-bottom-gap-l" data-appear="zoom-out" data-unload="zoom-out">
                         <!-- Masked Media -->
                         <div class="bringer-masked-media bringer-masked-media bringer-parallax-media">
-                            <img src="img/home/home01-hero.jpg" alt="Unleash Your Creativity">
+                            <img src="{% static 'img/home/home01-hero.jpg' %}" alt="Unleash Your Creativity">
                         </div>
                         <!-- Content -->
                         <div class="bringer-masked-content at-bottom-right">
@@ -186,7 +162,7 @@
                 <div class="stg-row stg-bottom-gap stg-valign-middle stg-m-bottom-gap-l" data-unload="fade-left">
                     <div class="stg-col-3 stg-offset-3 stg-tp-col-6 stg-m-bottom-gap" data-appear="fade-right">
                         <div class="bringer-parallax-media">
-                            <img class="bringer-lazy" src="img/null.png" data-src="img/home/step01.jpg" alt="Step 01" width="960" height="960">
+                            <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/home/step01.jpg' %}" alt="Step 01" width="960" height="960">
                         </div>
                     </div>
                     <div class="stg-col-6 stg-tp-col-6" data-appear="fade-right" data-delay="100">
@@ -200,7 +176,7 @@
                 <div class="stg-row stg-bottom-gap stg-valign-middle stg-tp-row-reverse stg-m-bottom-gap-l" data-unload="fade-right">
                     <div class="stg-col-3 stg-tp-col-6 stg-m-bottom-gap" data-appear="fade-left">
                         <div class="bringer-parallax-media">
-                            <img class="bringer-lazy" src="img/null.png" data-src="img/home/step02.jpg" alt="Step 02" width="960" height="960">
+                            <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/home/step02.jpg' %}" alt="Step 02" width="960" height="960">
                         </div>
                     </div>
                     <div class="stg-col-6 stg-tp-col-6" data-appear="fade-left" data-delay="100">
@@ -215,7 +191,7 @@
                 <div class="stg-row stg-bottom-gap stg-valign-middle stg-m-bottom-gap-l" data-unload="fade-left">
                     <div class="stg-col-3 stg-offset-3 stg-tp-col-6 stg-m-bottom-gap" data-appear="fade-right">
                         <div class="bringer-parallax-media">
-                            <img class="bringer-lazy" src="img/null.png" data-src="img/home/step03.jpg" alt="Step 03" width="960" height="960">
+                            <img class="bringer-lazy" src="{% static 'img/null.png' %}" data-src="img/home/step03.jpg" alt="Step 03" width="960" height="960">
                         </div>
                     </div>
                     <div class="stg-col-6 stg-tp-col-6" data-appear="fade-right" data-delay="100">
@@ -229,7 +205,7 @@
                 <div class="stg-row stg-valign-middle stg-tp-row-reverse" data-unload="fade-right">
                     <div class="stg-col-3 stg-tp-col-6 stg-m-bottom-gap" data-appear="fade-left">
                         <div class="bringer-parallax-media">
-                            <img class="bringer-lazy" src="img/null.png" data-src="img/home/step04.jpg" alt="Step 04" width="960" height="960">
+                            <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/home/step04.jpg' %}" alt="Step 04" width="960" height="960">
                         </div>
                     </div>
                     <div class="stg-col-6 stg-tp-col-6" data-appear="fade-left" data-delay="100">
@@ -255,7 +231,7 @@
                     </div>
                     <div class="stg-col-6 stg-tp-bottom-gap-l stg-m-bottom-gap" data-unload="fade-right" data-appear="fade-left">
                         <div class="bringer-parallax-media">
-                            <img class="bringer-lazy" src="img/null.png" data-src="img/home/about03.jpg" alt="About Us" width="960" height="960">
+                            <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/home/about03.jpg' %}" alt="About Us" width="960" height="960">
                         </div>
                     </div>
                 </div><!-- .stg-row -->
@@ -278,7 +254,7 @@
                         <!-- Card Item 01 -->
                         <div class="bringer-block bringer-portfolio-card swiper-slide">
                             <div class="bringer-portfolio-card-image">
-                                <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/portfolio01.jpg" alt="" width="1200" height="1200">
+                                <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/portfolio/portfolio01.jpg' %}" alt="" width="1200" height="1200">
                             </div>
                             <div class="bringer-portfolio-card-footer">
                                 <div class="bringer-portfolio-card-title">
@@ -293,7 +269,7 @@
                         <!-- Card Item 02 -->
                         <div class="bringer-block bringer-portfolio-card swiper-slide">
                             <div class="bringer-portfolio-card-image">
-                                <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/portfolio02.jpg" alt="" width="1200" height="1200">
+                                <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/portfolio/portfolio02.jpg' %}" alt="" width="1200" height="1200">
                             </div>
                             <div class="bringer-portfolio-card-footer">
                                 <div class="bringer-portfolio-card-title">
@@ -308,7 +284,7 @@
                         <!-- Card Item 03 -->
                         <div class="bringer-block bringer-portfolio-card swiper-slide">
                             <div class="bringer-portfolio-card-image">
-                                <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/portfolio03.jpg" alt="" width="1200" height="1200">
+                                <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/portfolio/portfolio03.jpg' %}" alt="" width="1200" height="1200">
                             </div>
                             <div class="bringer-portfolio-card-footer">
                                 <div class="bringer-portfolio-card-title">
@@ -323,7 +299,7 @@
                         <!-- Card Item 04 -->
                         <div class="bringer-block bringer-portfolio-card swiper-slide">
                             <div class="bringer-portfolio-card-image">
-                                <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/portfolio04.jpg" alt="" width="1200" height="1200">
+                                <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/portfolio/portfolio04.jpg' %}" alt="" width="1200" height="1200">
                             </div>
                             <div class="bringer-portfolio-card-footer">
                                 <div class="bringer-portfolio-card-title">
@@ -338,7 +314,7 @@
                         <!-- Card Item 05 -->
                         <div class="bringer-block bringer-portfolio-card swiper-slide">
                             <div class="bringer-portfolio-card-image">
-                                <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/portfolio05.jpg" alt="" width="1200" height="1200">
+                                <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/portfolio/portfolio05.jpg' %}" alt="" width="1200" height="1200">
                             </div>
                             <div class="bringer-portfolio-card-footer">
                                 <div class="bringer-portfolio-card-title">
@@ -353,7 +329,7 @@
                         <!-- Card Item 06 -->
                         <div class="bringer-block bringer-portfolio-card swiper-slide">
                             <div class="bringer-portfolio-card-image">
-                                <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/portfolio06.jpg" alt="" width="1200" height="1200">
+                                <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/portfolio/portfolio06.jpg' %}" alt="" width="1200" height="1200">
                             </div>
                             <div class="bringer-portfolio-card-footer">
                                 <div class="bringer-portfolio-card-title">
@@ -368,7 +344,7 @@
                         <!-- Card Item 07 -->
                         <div class="bringer-block bringer-portfolio-card swiper-slide">
                             <div class="bringer-portfolio-card-image">
-                                <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/portfolio07.jpg" alt="" width="1200" height="1200">
+                                <img class="bringer-lazy" src="img/null.png" data-src="{% static 'img/portfolio/portfolio07.jpg' %}" alt="" width="1200" height="1200">
                             </div>
                             <div class="bringer-portfolio-card-footer">
                                 <div class="bringer-portfolio-card-title">
@@ -503,7 +479,7 @@
                         <div class="stg-col-5 stg-tp-col-12 stg-tp-bottom-gap-l">
                             <div class="bringer-info-widget">
                                 <a href="./" class="bringer-logo footer-logo">
-                                    <img src="img/logo.png" alt="bringer." width="88" height="24">
+                                    <img src="{% static 'img/logo.png' %}" alt="bringer." width="88" height="24">
                                 </a>
                                 <div class="bringer-info-description">Мы - страстная команда разработчиков и дизайнеров, которые верят в силу творчества. Мы помогаем творческим людям создавать сильное онлайн-представительство, которое демонстрирует их работу и рассказывает историю.</div>
                                 <span class="bringer-label">Следите за нами:</span>
